@@ -33,15 +33,7 @@ public class FragmentA extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View v =  inflater.inflate(R.layout.fragment_a, container, false);
-        Button btn_a_fragment_a = v.findViewById(R.id.btn_a_fragment_a);
 
-        btn_a_fragment_a.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //4. Mandar info al otro lado
-                if(listener != null)  listener.onMessage("Hola desde el fragment A");
-            }
-        });
         return v;
     }
 
